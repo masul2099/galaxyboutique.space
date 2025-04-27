@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Galaxy - Tia Nenè</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Estilos Personalizados -->
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #2d3e50;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+            letter-spacing: 3px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section.hero {
+            background: linear-gradient(135deg, #6a89cc, #b8c6db);
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #fff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        section.hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        section.hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .products, .about {
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .products h2, .about h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .products p, .about p {
+            font-size: 1.1rem;
+            max-width: 900px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .cta-button {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #e95a50;
+        }
+
+        .footer {
+            background-color: #2d3e50;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .flex-item {
+            flex: 1 1 calc(33% - 2rem);
+            box-sizing: border-box;
+        }
+
+        /* Responsividade */
+        @media (max-width: 1024px) {
+            header {
+                font-size: 1.8rem;
+                padding: 1.5rem;
+            }
+
+            section.hero h1 {
+                font-size: 2.5rem;
+            }
+
+            section.hero p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 1.1rem;
+            }
+
+            .products p, .about p {
+                font-size: 1rem;
+            }
+
+            .flex-item {
+                flex: 1 1 calc(50% - 1rem);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                font-size: 1.5rem;
+                padding: 1rem;
+            }
+
+            section.hero h1 {
+                font-size: 2rem;
+            }
+
+            section.hero p {
+                font-size: 0.9rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+            }
+
+            .products h2, .about h2 {
+                font-size: 1.6rem;
+            }
+
+            .flex-item {
+                flex: 1 1 100%;
+            }
+
+            .footer {
+                font-size: 0.9rem;
+                padding: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section.hero {
+                padding: 3rem 1rem;
+            }
+
+            section.hero h1 {
+                font-size: 1.8rem;
+            }
+
+            section.hero p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 1rem 1.5rem;
+            }
+
+            .products h2, .about h2 {
+                font-size: 1.4rem;
+            }
+
+            .products p, .about p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Boutique Galaxy - Tia Nenè</h1>
+    </header>
+
+    <section class="hero">
+        <h1>Bem-vinda à Boutique Galaxy</h1>
+        <p>O seu espaço local para vestidos, tecidos e acessórios elegantes para noivas e ocasiões especiais. Situada em Tete-Moçambique, também oferecemos produtos de @beautybyrouge_skin para realçar a sua beleza.</p>
+        <button class="cta-button">Ver Produtos</button>
+    </section>
+
+    <section class="about">
+        <h2>Sobre Nós</h2>
+        <p>Na Boutique Galaxy - Tia Nenè, somos especializados em vestidos elegantes, tecidos de alta qualidade e acessórios únicos para tornar o seu momento ainda mais especial. Perfeitos para noivas e outras ocasiões marcantes.</p>
+    </section>
+
+    <section class="products">
+        <h2>Nossos Produtos</h2>
+        <p>Conheça nossa coleção de vestidos, tecidos e acessórios para noivas, além de produtos exclusivos de cuidado com a pele da @beautybyrouge_skin. Temos tudo o que precisa para brilhar no seu grande dia.</p>
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <h3>Vestidos de Noiva</h3>
+                <p>Modelos elegantes e únicos para todos os estilos de noivas.</p>
+            </div>
+            <div class="flex-item">
+                <h3>Tecidos</h3>
+                <p>Tecidos premium para vestidos personalizados e acessórios.</p>
+            </div>
+            <div class="flex-item">
+                <h3>Acessórios</h3>
+                <p>Acessórios delicados para complementar o seu visual especial.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Boutique Galaxy - Tia Nenè | Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>
